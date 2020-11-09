@@ -37,3 +37,5 @@ This project is basically an application that allows one to perform CRUD operati
 * Install bootstrap as indicated in the approved stack overflow answer from this page: https://stackoverflow.com/questions/52676474/bootstrap-not-working-properly-in-angular-6#:~:text=js%20script%20Bootstrap%20will%20not%20work.&text=If%20you%20are%20adding%20the,the%20project%5Carchitect%5Ctest.
 * Run "npm start" on the angular-app folder.
 
+**! To navigate between the 3 different list views of the app (movies list, clients list, rentals list), you need to manually write the urls of these views in the search bar: localhost:4200/movies , localhost:4200/clients , localhost:4200/rentals .**
+
