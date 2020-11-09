@@ -1,0 +1,6 @@
+<dataset>
+    <movie id="-1" title="t1" year="2001" duration="111" genre="g1" imdbRating="1.1" trailerLink="h1" />
+    <movie id="-2" title="t2" year="2002" duration="222" genre="g2" imdbRating="2.2" trailerLink="h1" />
+    <movie id="-3" title="t3" year="2003" duration="333" genre="g3" imdbRating="3.3" trailerLink="h1" />
+    <movie id="-4" title="t4" year="2004" duration="444" genre="g4" imdbRating="4.4" trailerLink="h1" />
+</dataset>
