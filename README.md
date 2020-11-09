@@ -11,17 +11,6 @@ This project is basically an application that allows one to perform CRUD operati
 
 **! Note that the application is very simplistic since its aim is only to provide the basics of how to work with and integrate all of the technologies and frameworks mentioned above.**
 
-## Screenshots from the application
-
-<img src="screenshots/ss1.png"/>
-<img src="screenshots/ss2.png"/>
-<img src="screenshots/ss3.png"/>
-<img src="screenshots/ss4.png"/>
-<img src="screenshots/ss5.png"/>
-<img src="screenshots/ss6.png"/>
-<img src="screenshots/ss7.png"/>
-<img src="screenshots/ss8.png"/>
-
 ## Features of the application:
 * login & logout - **there can be 2 types of users for this application: CLIENTs and ADMINs**;
 * Add/Delete/Update/List/View details (of) movie(s);
@@ -46,3 +35,13 @@ This project is basically an application that allows one to perform CRUD operati
 
 **! To navigate between the 3 different list views of the app (movies list, clients list, rentals list), you need to manually write the urls of these views in the search bar: localhost:4200/movies , localhost:4200/clients , localhost:4200/rentals .**
 
+## Screenshots from the application
+
+<img src="screenshots/ss1.png"/>
+<img src="screenshots/ss2.png"/>
+<img src="screenshots/ss3.png"/>
+<img src="screenshots/ss4.png"/>
+<img src="screenshots/ss5.png"/>
+<img src="screenshots/ss6.png"/>
+<img src="screenshots/ss7.png"/>
+<img src="screenshots/ss8.png"/>
