@@ -4,6 +4,8 @@ An example of a working project with a **client-server** architecture, where:
 * the **server** is written in Java and uses Spring Boot, Spring Security and PostgreSQL;
 * the **client** is written in Angular
 
+## App overview
+
 **Features of the application:**
 * login & logout
 
