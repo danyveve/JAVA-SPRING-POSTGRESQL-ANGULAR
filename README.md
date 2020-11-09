@@ -8,9 +8,10 @@ Features of the application:
 
 
 ## How to start the application:
-* Backend:
-** dada
-** dada
-* Frontend:
-** nunu
-** nunu
+**Backend:**
+* dada
+* dada
+
+**Frontend:**
+* nunu
+* nunu
