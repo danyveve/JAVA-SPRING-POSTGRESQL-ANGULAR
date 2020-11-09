@@ -13,6 +13,8 @@ This project is basically an application that allows one to perform CRUD operati
 
 ## Screenshots from the application
 
+<img src="images/Simulator1.jpg" width="200" height="400" />
+
 ## Features of the application:
 * login & logout - **there can be 2 types of users for this application: CLIENTs and ADMINs**;
 * Add/Delete/Update/List/View details (of) movie(s);
