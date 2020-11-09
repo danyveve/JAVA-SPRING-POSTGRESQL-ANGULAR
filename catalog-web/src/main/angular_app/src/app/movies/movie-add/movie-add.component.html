@@ -1,0 +1,39 @@
+<form>
+  <h4>Add new movie:</h4>
+  <div>
+    <label>Movie title:
+      <input #movieTitle/>
+    </label>
+  </div>
+  <div>
+    <label>Movie year:
+      <input #movieYear type="number"/>
+    </label>
+  </div>
+  <div>
+    <label>Movie duration:
+      <input #movieDuration type="number"/>
+    </label>
+  </div>
+  <div>
+    <label>Movie genre:
+      <input #movieGenre/>
+    </label>
+  </div>
+  <div>
+    <label>Movie imdbRating:
+      <input #movieImdbRating type="number"/>
+    </label>
+  </div>
+  <div>
+    <label>Movie trailer link:
+      <input #movieTrailerLink/>
+    </label>
+  </div>
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button
+    (click)="add(movieTitle.value, movieYear.value, movieDuration.value, movieGenre.value, movieImdbRating.value, movieTrailerLink.value); movieTitle.value='' ; movieYear.value='' ; movieGenre.value=''; movieDuration.value='' ; movieImdbRating.value='' ; movieTrailerLink.value=''">
+    add
+  </button>
+</form>

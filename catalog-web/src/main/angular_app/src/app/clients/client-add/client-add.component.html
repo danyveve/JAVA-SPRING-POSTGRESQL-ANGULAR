@@ -1,0 +1,28 @@
+<form>
+  <h4>Add new client:</h4>
+  <div>
+    <label>Client name:
+      <input #clientName/>
+    </label>
+  </div>
+  <div>
+    <label>Client email:
+      <input #clientEmail/>
+    </label>
+  </div>
+  <div>
+    <label>Client date of birth:
+      <input #clientDateOfBirth/>
+    </label>
+  </div>
+  <div>
+    <label>Client date of register:
+      <input #clientDateOfRegister/>
+    </label>
+  </div>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button
+    (click)="add(clientName.value, clientEmail.value, clientDateOfBirth.value, clientDateOfRegister.value); clientName.value=''; clientEmail.value=''; clientDateOfBirth.value=''; clientDateOfRegister.value=''">
+    add
+  </button>
+</form>

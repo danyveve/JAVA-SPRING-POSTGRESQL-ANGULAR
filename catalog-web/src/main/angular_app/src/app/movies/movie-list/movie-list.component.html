@@ -1,0 +1,13 @@
+<app-movie-add (movieEvent)="receiveMovie($event)"></app-movie-add>
+
+<h2>Movies</h2>
+<ol class="movies">
+  <li *ngFor="let movie of movies">
+    <a routerLink="/movie/detail/{{movie.id}}">
+      <span class="badge">{{movie.id}}</span> {{movie.title}}
+    </a>
+    <button class="delete" title="delete movie"
+            (click)="delete(movie)">x
+    </button>
+  </li>
+</ol>

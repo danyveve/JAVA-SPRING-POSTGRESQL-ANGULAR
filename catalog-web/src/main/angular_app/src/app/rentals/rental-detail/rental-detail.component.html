@@ -1,0 +1,25 @@
+<div *ngIf="rental">
+  <h2>Rental C:{{rental.clientID}} M:{{rental.movieID}}  details</h2>
+  <div>
+    <label>MID: </label> {{rental.movieID}}
+  </div>
+  <div>
+    <label>CID: </label> {{rental.clientID}}
+  </div>
+  <div>
+    <label>Movie Title: </label> {{rental.movieTitle}}
+  </div>
+  <div>
+    <label>Client Name: </label> {{rental.clientName}}
+  </div>
+  <div>
+    <label>Date Rented: </label> {{rental.dateRented}}
+    <input [(ngModel)]="rental.dateRented" placeholder="Date rented">
+  </div>
+  <div>
+    <label>Date Due: </label> {{rental.dateDue}}
+    <input [(ngModel)]="rental.dateDue" placeholder="Date due">
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>

@@ -1,0 +1,16 @@
+<h2>Rentals</h2>
+<ol class="rentals">
+  <li *ngFor="let rental of rentals">
+    <a routerLink="/rental/detail/{{rental.movieID}}/{{rental.clientID}}">
+      <span class="badge">C:{{rental.clientID}}  M:{{rental.movieID}} </span>
+      {{rental.clientName}} {{rental.movieTitle}}
+    </a>
+    <button class="delete" title="delete rental"
+            (click)="delete(rental)">x
+    </button>
+  </li>
+</ol>
+
+<nav>
+  <a routerLink="/addRental" routerLinkActive="active">Add Rental</a>
+</nav>

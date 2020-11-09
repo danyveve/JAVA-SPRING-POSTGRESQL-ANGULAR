@@ -1,0 +1,12 @@
+<app-client-add (clientEvent)="receiveClient($event)"></app-client-add>
+
+<ol class="clients">
+  <li *ngFor="let client of clients">
+    <a routerLink="/client/detail/{{client.id}}">
+      <span class="badge">{{client.id}}</span> {{client.name}}
+    </a>
+    <button class="delete" title="delete client"
+            (click)="delete(client)">x
+    </button>
+  </li>
+</ol>

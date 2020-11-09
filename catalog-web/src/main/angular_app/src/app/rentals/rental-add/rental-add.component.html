@@ -1,0 +1,27 @@
+<h2>Select client:</h2>
+<ol class="clients">
+  <li *ngFor="let client of clients" [class.selected]="client === selectedClient"
+      (click)="onSelectClient(client)">
+    <span class="badge">{{client.id}}</span> {{client.name}}
+  </li>
+</ol>
+
+<h2>Select movie:</h2>
+<ol class="movies">
+  <li *ngFor="let movie of movies" [class.selected]="movie === selectedMovie"
+      (click)="onSelectMovie(movie)">
+    <span class="badge">{{movie.id}}</span> {{movie.title}}
+  </li>
+</ol>
+<div>
+  <input id="dateRented" type="text" placeholder="dateRented"
+         [(ngModel)]="dateRented"/>
+  <input id="dateDue" type="text" placeholder="dateDue" [(ngModel)]="dateDue"/>
+  <button id="addRentalButton" [disabled]="!selectedMovie || !selectedClient || !dateDue || !dateRented"
+          (click)="add(selectedMovie.id, selectedClient.id, selectedMovie.title, selectedClient.name, dateRented, dateDue)">
+    Add rental
+  </button>
+</div>
+<div>
+  <button (click)="goBack()">Back</button>
+</div>
