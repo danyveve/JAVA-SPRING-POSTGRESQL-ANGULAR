@@ -8,6 +8,7 @@ An example of a working project with a **client-server** architecture, where:
 
 **Features of the application:**
 * login & logout
+* Add/Delete/Update/List/View details (of) movie(s)
 
 ## How to start the application:
 **Backend:**
