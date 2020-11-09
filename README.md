@@ -22,11 +22,16 @@ This project is basically an application that allows one to perform CRUD operati
 ## How to start the application:
 **Backend:**
 * Make sure you have the PostgreSQL server installed, along with pgAdmin;
-* Modify the username and password keys from the application.properties to match your PostgreSQL credentials
-* Create an empty DB named "movieapp" (at the first run of the application, the tables will be created automatically, but the database itself must be already created)
-* Add users in the "app_user" table. You can execute this SQL query to do so: "insert into app_user VALUES (<INT_ID>, '<FIRST_NAME>', '<LAST_NAME>', '<ENCODED_PASSWORD>', '<USERNAME>', '<ROLE>');". Make sure you replace all the values with your custom ones, and make sure that ROLE is either CLIENT or ADMIN. **To obtain the encoded password**, check the SecurityConfig.java file and change the value of the "passwordToEncode" variable to a password that you wish to use for your user; then, just run the application once and look for the log in the console which will output your encoded password.
+* Modify the username and password keys from the application.properties to match your PostgreSQL credentials;
+* Create an empty DB named "movieapp" (at the first run of the application, the tables will be created automatically, but the database itself must be already created);
+* Add users in the "app_user" table. You can execute this SQL query to do so: "insert into app_user VALUES (<INT_ID>, '<FIRST_NAME>', '<LAST_NAME>', '<ENCODED_PASSWORD>', '<USERNAME>', '<ROLE>');". Make sure you replace all the values with your custom ones, and make sure that ROLE is either CLIENT or ADMIN. **To obtain the encoded password**, check the SecurityConfig.java file and change the value of the "passwordToEncode" variable to a password that you wish to use for your user; then, just run the application once and look for the log in the console which will output your encoded password;
+* Run the app.
 
 **Frontend:**
-* nunu
-* nunu
+* Install Node.js;
+* Install Angular CLI;
+* Run "npm install" followed by "npm audit fix" in the angular-app folder from the catalog-web module;
+* Run "npm install rxjs-compat" in the same angular-app folder;
+* Install bootstrap as indicated in the approved stack overflow answer from this page: https://stackoverflow.com/questions/52676474/bootstrap-not-working-properly-in-angular-6#:~:text=js%20script%20Bootstrap%20will%20not%20work.&text=If%20you%20are%20adding%20the,the%20project%5Carchitect%5Ctest.
+* Run "npm start" on the angular-app folder.
 
