@@ -13,7 +13,14 @@ This project is basically an application that allows one to perform CRUD operati
 
 ## Screenshots from the application
 
-<img src="screenshots/ss1.png" width="700" height="400"/>
+<img src="screenshots/ss1.png"/>
+<img src="screenshots/ss2.png"/>
+<img src="screenshots/ss3.png"/>
+<img src="screenshots/ss4.png"/>
+<img src="screenshots/ss5.png"/>
+<img src="screenshots/ss6.png"/>
+<img src="screenshots/ss7.png"/>
+<img src="screenshots/ss8.png"/>
 
 ## Features of the application:
 * login & logout - **there can be 2 types of users for this application: CLIENTs and ADMINs**;
