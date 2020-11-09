@@ -14,15 +14,17 @@ This project is basically an application that allows one to perform CRUD operati
 ## Screenshots from the application
 
 ## Features of the application:
-* login & logout - there can be 2 types of users for this application: CLIENTs and ADMINs;
+* login & logout - **there can be 2 types of users for this application: CLIENTs and ADMINs**;
 * Add/Delete/Update/List/View details (of) movie(s);
 * Add/Delete/Update/List/View details (of) client(s);
 * Add/Delete/Update/List/View details (of) rental(s) - **only when logged in as an ADMIN**.
 
 ## How to start the application:
 **Backend:**
-* dada
-* dada
+* Make sure you have the PostgreSQL server installed, along with pgAdmin;
+* Modify the username and password keys from the application.properties to match your PostgreSQL credentials
+* Create an empty DB named "movieapp" (at the first run of the application, the tables will be created automatically, but the database itself must be already created)
+* Add users in the "app_user" table. You can execute this SQL query to do so: "insert into app_user VALUES (<INT_ID>, '<FIRST_NAME>', '<LAST_NAME>', '<ENCODED_PASSWORD>', '<USERNAME>', '<ROLE>');". Make sure you replace all the values with your custom ones, and make sure that ROLE is either CLIENT or ADMIN. **To obtain the encoded password**, check the SecurityConfig.java file and change the value of the "passwordToEncode" variable to a password that you wish to use for your user; then, just run the application once and look for the log in the console which will output your encoded password.
 
 **Frontend:**
 * nunu
